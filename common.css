@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    position: relative;
+    width: 100%;
+    background: #252568;
+    overflow: hidden;
+  }
+  
+  div.top {
+    height: 80px;
+  }
+  
+  img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 400px;
+  }
+  
+  .out-ul {
+    position: relative;
+    list-style-type: none;
+    left: 420px;
+    top: 14px;
+  }
+  .out-ul button {
+    position: relative;
+    width: 160px;
+    height: 49px;
+    outline: none;
+    color: white;
+    background: url(images/705_06.png) no-repeat;
+    border: 0;
+    text-align: center;
+    line-height: 49px;
+    font-size: 20px;
+  }
+  .out-ul > li {
+    float: left;
+    margin-left: 20px;
+  }
+  .out-ul::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .in-ul {
+    position: absolute;
+    list-style-type: none;
+    z-index: 1001;
+    display: none;
+  }
+  .in-ul > li {
+    width: 160px;
+    height: 40px;
+    color: white;
+    background: rgb(72, 72, 172);
+    line-height: 40px;
+    letter-spacing: 10px;
+    text-indent: 15px;
+    z-index: 100;
+  }
+  .in-ul > li:hover {
+    background: #2ca1d3;
+  }
+  
+  .line{
+    position: relative;
+    margin-left: 3%;
+    width: 94%;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  hr {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border: none;
+    border-top: 1px dashed #2ca1d3;
+  }
+
+  .line img{
+    position: absolute;
+    top: 50%;
+    margin-top:-26px; 
+    left: 50%;
+    margin-left: -91px;
+    width: 182px;
+    height: 51px;
+    z-index: 100;
+  }
+  
+  div.mid {
+    position: relative;
+    top: 30px;
+    height: 40px;
+    width: 94%;
+    left: 3%;
+  }
+  /* div.mid div.posi {
+    position: relative;
+  } */
+  div.mid div.posi > input.search {
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #2ca1d3;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: #2ca1d3;
+    text-indent: 10px;
+    
+  }
+  div.mid div.posi > input.search::-webkit-input-placeholder {
+    color: #2ca1d3;
+    font-size: 13px;
+    
+  }
+  div.mid div.posi div.uldiv{
+    position: relative;
+    
+    display: inline;
+  }
+  div.mid div.posi div.uldiv span {
+    font-size: 13px;
+    color: white;
+    margin-left: 100px;
+  }
+  div.mid div.posi div.uldiv input.ulli {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #2ca1d3;
+    background: transparent;
+    border-radius: 5px;
+    vertical-align: middle;
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    outline: none;
+    text-indent: 10px;
+  }
+  div.mid div.posi div.uldiv ul{
+    position: absolute;
+    left: 165px;
+    list-style-type: none;
+    z-index: 1000;
+    /* display: none; */
+  }
+  div.mid div.posi div.uldiv ul li{
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    background: rgb(72, 72, 172);
+    color: white;
+    font-size: 13px;
+    padding-left:10px; 
+  }
+  div.mid div.posi div.uldiv ul li:hover{
+    background: #2ca1d3;
+  }
+  div.mid div.posi  button {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background: transparent;
+    border: 1px solid #2ca1d3;
+    border-radius: 5px;
+    color: #5de0e9;
+    right: 0px;
+  }

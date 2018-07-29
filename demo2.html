@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>705-work2</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="demo2.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+</head>
+<body>
+    <div class="top">
+        <img src="images/705_03.png">
+        <ul class="out-ul">
+            <li v-for="val in list" class="top-li" @click="show($event)">
+                <button>{{val}}</button>
+                <ul class="in-ul">
+                    <li v-for="item in list1">{{item}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="line">
+        <hr>
+        <img src="images/images/images/705-4_03.png">
+    </div>
+    <div class="mid">
+        <div class="posi">
+            <input class="search" type="search" placeholder="输入关键字搜索">
+            <div class="uldiv">
+                <span>单位类型：</span><input class="ulli" type="button" value="全部" @click="show()">
+                <ul v-show="look">
+                    <li class="listLi" v-for="(val,index) in list" :key="index" @click="changeli(index)">{{val}}</li>
+                </ul>
+            </div>
+            <button class="right">更多>></button>
+        </div>
+    </div>
+   <div class="btm">
+       <div id="container"></div>
+   </div>
+<script src="demo2.js"></script>
+</body>
+</html>

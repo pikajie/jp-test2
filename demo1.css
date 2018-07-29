@@ -1,0 +1,74 @@
+
+
+.btm {
+  position: relative;
+  top: 50px;
+  margin-left: 3%;
+  width: 94%;
+  height: 539px;
+}
+.btm .btm-left {
+  position: relative;
+  width: 644px;
+  height: 539px;
+  background: url(images/images/705-2_03.png);
+  float: left;
+}
+.btm .btm-left .circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #2ca1d3;
+  border-radius: 50%;
+}
+.btm .btm-right {
+  position: relative;
+  width: 773px;
+  height: 539px;
+  background: url(images/images/705-2_05.png);
+  float: left;
+}
+.btm::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.btm #container {
+  width: 644px;
+  height: 539px;
+}
+.btm #container2 {
+  width: 773px;
+  height: 480px;
+}
+/* .btm .qh{
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  left: 50%;
+  margin-left: -25px;
+} */
+.btm .qh button{
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  color: #2ca1d3;
+  font-weight: bold;
+  border: 1px solid red;
+  font-size: 18px;
+  outline: none;
+}
+.btm .qh button.left{
+  position: absolute;
+  left: 200px;
+}
+.btm .qh button.right{
+  position: absolute;
+  right: 200px;
+}
+
+/*# sourceMappingURL=demo1.css.map */
